@@ -1,12 +1,25 @@
 .Cover{
-    background-image: url(https://lh3.googleusercontent.com/uzFwaGSiL8P4zKuRVddeHpo5n1b7UUrp5Mw3sNEGjLQSiJ_li8Zdkm0chf6xTXuAiSedIt77ga6Q4gLZ1_Ho7Tmc5AR3sBiwQ1ZmQTEXLuJ119fNuCeSUcphV5tBi0CxdsBPCqBUaIA=w600-h315-p-k);
-    background-size: 100% 100%;
-    background-color:rgba(255, 255, 255, 0.9);
+    background-image: url(Image003.jpeg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
+
     width: 103%;
-    height:650px;
+    height:850px;
     border:0px;
-    margin-top: -30px;
-    margin-left: -10px;
+    margin-top: -80px;
+    margin-left: -10px;  
     
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.CoverContainer{
+    margin:0px auto;
+}
+
+.Title{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px #333;
+    color: aliceblue;
 }
