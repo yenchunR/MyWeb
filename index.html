@@ -13,13 +13,19 @@
                         'https://drive.google.com/file/d/1iiYNVFJPgXZQhQubRWk-FV-NMiKua-w5/view?usp=sharing',
                         'https://drive.google.com/file/d/1RewWlOz12JMfesB71L9mu47Bbbyn3zPV/view?usp=sharing']
                     BtnP = document.getElementsByClassName('ButtonP'),
-                    ImgP = document.getElementById('ImgP');
-                    HrefP = document.getElementById('HrefP');
+                    ImgP = document.getElementById('ImgP'),
+                    HrefP = document.getElementById('HrefP'),
+
+                    arrImg2 = ['Img004.jpg','Img005.jpeg','Img006.jpeg'],
+                    BtnL = document.getElementsByClassName('ButtonL'),
+                    ImgL = document.getElementById('ImgL');
             
                     ImgP.src = arrImg[0];
                     HrefP.href = arrHref[0];
+                    ImgL.src = arrImg2[0];
+                    
                     for (var i = 0; i < BtnP.length; i++) {
-                    BtnP[i].index = i; 
+                    BtnP[i].index = i;
                         BtnP[i].onclick = function(){
                             
                         for (var j = 0; j < BtnP.length; j++) {
@@ -28,6 +34,17 @@
                         ImgP.src = arrImg[this.index];
                         HrefP.href = arrHref[this.index];
                         BtnP[this.index].style.backgroundColor = 'steelblue';
+                        }
+                    }
+                    for (var i = 0; i < BtnL.length; i++) {
+                    BtnL[i].index = i;
+                        BtnL[i].onclick = function(){
+                            
+                        for (var j = 0; j < BtnL.length; j++) {
+                            BtnL[j].style.backgroundColor = '#ccc'
+                        }
+                        ImgL.src = arrImg2[this.index];
+                        BtnL[this.index].style.backgroundColor = 'steelblue';
                         }
                     }
                   
@@ -76,6 +93,25 @@
                 <input class="ButtonP" type="button">
             </div>
         </div>
-
+        <div id="BitOfLife">
+            <div>
+                <h3 class="PartTitle">BitOfLife</h3>
+                <p class="Intr">
+                    One is always on a strange road,<br>
+                    watching strange scenery and listeningto strange music、<br>
+                    Then one day, <br>
+                    you will find that the things you tryhard to forget are already gone.
+                </p>
+            </div>
+            <div class="ImageFrame">
+                <a id="HrefL" href=""><img id="ImgL" src=""></a>
+            </div>
+            <br>
+            <div class="Button">
+                <input class="ButtonL" type="button">
+                <input class="ButtonL" type="button">
+                <input class="ButtonL" type="button">
+            </div>
+        </div>
     </body>
 </html>
