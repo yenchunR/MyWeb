@@ -114,6 +114,20 @@ img{
 }
 @media (max-width: 660px){
     .Cover{
-        height: px;
+        height: 700px;
+    }
+    #NavBarList{
+        list-style-type: none;
+        text-align:justify;
+        margin-right: 30px;
+    }
+    #NavBarList ul li{
+        display: inline-block;
+        height: 30px;
+        width: 98px;
+    }
+    .ImageFrame{
+        height: 230px;
+        text-align: center;
     }
 }
