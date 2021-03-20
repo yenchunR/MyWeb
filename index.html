@@ -8,11 +8,11 @@
 
         <script type="text/javascript">
             window.onload = function(){
-              var arrImg1 = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
+              var arrImg = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
                   aBtn = document.getElementsByTagName('input'),
                   oImg = document.getElementById('img');
            
-                  oImg.src = arrImg1[0]
+                  oImg.src = arrImg[0]
                   for (var i = 0; i < aBtn.length; i++) {
                    aBtn[i].index = i; 
                       aBtn[i].onclick = function(){
@@ -20,11 +20,11 @@
                        for (var j = 0; j < aBtn.length; j++) {
                            aBtn[j].style.backgroundColor = '#ccc'
                        }
-                       oImg.src = arrImg1[this.index];
+                       oImg.src = arrImg[this.index];
                        aBtn[this.index].style.backgroundColor = 'steelblue';
                       }
                   }
-
+                  
             }
            </script>
         
