@@ -30,3 +30,21 @@
     text-shadow: 2px 2px 2px #333;
     font-family:cursive;
 }
+.NavBarText{
+    color:aliceblue;
+}
+#NavBarList{
+    list-style-type: none;
+    text-align:right;
+    margin-right: 30px;
+}
+#NavBarList ul li{
+    display: inline-block;
+    height: 30px;
+    width: 125px;
+    
+}
+#NavBarList li a{
+    text-decoration: none; 
+    text-align: center;
+}
