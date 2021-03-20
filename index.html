@@ -9,19 +9,19 @@
         <script type="text/javascript">
             window.onload = function(){
               var arrImg = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
-                  aBtn = document.getElementsByTagName('input'),
-                  oImg = document.getElementById('img');
+                  BtnP = document.getElementsByClassName('ButtonP'),
+                  ImgP = document.getElementById('img');
            
-                  oImg.src = arrImg[0]
-                  for (var i = 0; i < aBtn.length; i++) {
-                   aBtn[i].index = i; 
-                      aBtn[i].onclick = function(){
+                  ImgP.src = arrImg[0]
+                  for (var i = 0; i < BtnP.length; i++) {
+                   BtnP[i].index = i; 
+                      BtnP[i].onclick = function(){
                           
-                       for (var j = 0; j < aBtn.length; j++) {
-                           aBtn[j].style.backgroundColor = '#ccc'
+                       for (var j = 0; j < BtnP.length; j++) {
+                           BtnP[j].style.backgroundColor = '#ccc'
                        }
-                       oImg.src = arrImg[this.index];
-                       aBtn[this.index].style.backgroundColor = 'steelblue';
+                       ImgP.src = arrImg[this.index];
+                       BtnP[this.index].style.backgroundColor = 'steelblue';
                       }
                   }
                   
@@ -51,15 +51,24 @@
         </div>
 
         <div id="Portfolio">
-                <div class="ImageFrame">
-                    <img id="img" src="">
-                </div>
-               <br>
-               <div class="Button">
-                <input type="button">
-                <input type="button">
-                <input type="button">
-               </div>
+            <div>
+                <h3 class="PartTitle">Portfolio</h3>
+                <p class="Intr">
+                    When tomorrow turns in today, yesterday, and someday that no moreimportant in your memory, <br>
+                    we suddenly realize that we r pushed forwardby time、 <br>
+                    This is not a train in still in which you may feel forwardwhen another train goes by、 <br>
+                    It is the truth that we’ve all grown up、And we become different.
+                </p>
+            </div>
+            <div class="ImageFrame">
+                <img id="img" src="">
+            </div>
+            <br>
+            <div class="Button">
+                <input class="ButtonP" type="button">
+                <input class="ButtonP" type="button">
+                <input class="ButtonP" type="button">
+            </div>
         </div>
 
     </body>
