@@ -8,22 +8,28 @@
 
         <script type="text/javascript">
             window.onload = function(){
-              var arrImg = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
-                  BtnP = document.getElementsByClassName('ButtonP'),
-                  ImgP = document.getElementById('img');
-           
-                  ImgP.src = arrImg[0]
-                  for (var i = 0; i < BtnP.length; i++) {
-                   BtnP[i].index = i; 
-                      BtnP[i].onclick = function(){
-                          
-                       for (var j = 0; j < BtnP.length; j++) {
-                           BtnP[j].style.backgroundColor = '#ccc'
-                       }
-                       ImgP.src = arrImg[this.index];
-                       BtnP[this.index].style.backgroundColor = 'steelblue';
-                      }
-                  }
+                var arrImg = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
+                    arrHref = ['https://www.youtube.com/watch?v=7q0ws66UTCU',
+                        'https://drive.google.com/file/d/1iiYNVFJPgXZQhQubRWk-FV-NMiKua-w5/view?usp=sharing',
+                        'https://drive.google.com/file/d/1RewWlOz12JMfesB71L9mu47Bbbyn3zPV/view?usp=sharing']
+                    BtnP = document.getElementsByClassName('ButtonP'),
+                    ImgP = document.getElementById('ImgP');
+                    HrefP = document.getElementById('HrefP');
+            
+                    ImgP.src = arrImg[0];
+                    HrefP.href = arrHref[0];
+                    for (var i = 0; i < BtnP.length; i++) {
+                    BtnP[i].index = i; 
+                        BtnP[i].onclick = function(){
+                            
+                        for (var j = 0; j < BtnP.length; j++) {
+                            BtnP[j].style.backgroundColor = '#ccc'
+                        }
+                        ImgP.src = arrImg[this.index];
+                        HrefP.href = arrHref[this.index];
+                        BtnP[this.index].style.backgroundColor = 'steelblue';
+                        }
+                    }
                   
             }
            </script>
@@ -61,7 +67,7 @@
                 </p>
             </div>
             <div class="ImageFrame">
-                <img id="img" src="">
+                <a id="HrefP" href=""><img id="ImgP" src=""></a>
             </div>
             <br>
             <div class="Button">
