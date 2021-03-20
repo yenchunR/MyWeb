@@ -48,3 +48,6 @@
     text-decoration: none; 
     text-align: center;
 }
+input{ width: 15px; height: 15px; background-color: #ccc; border-radius: 100%; border-style: none; }
+input:hover{ background-color:#333; }
+img{ width: 200px; height: 300px; }

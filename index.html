@@ -5,6 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ruru's Corner</title>
         <link rel="stylesheet" href="style.css" type="text/css">
+
+        <script type="text/javascript">
+            window.onload = function(){
+              var arrImg = ['Img001.jpeg','Img002.jpeg','Img002.jpeg'],
+                  aBtn = document.getElementsByTagName('input'),
+                  oImg = document.getElementById('img');
+           
+                  oImg.src = arrImg[0]
+                  for (var i = 0; i < aBtn.length; i++) {
+                   aBtn[i].index = i; 
+                      aBtn[i].onclick = function(){
+                          
+                       for (var j = 0; j < aBtn.length; j++) {
+                           aBtn[j].style.backgroundColor = '#ccc'
+                       }
+                       oImg.src = arrImg[this.index];
+                       aBtn[this.index].style.backgroundColor = 'red';
+                      }
+                  }
+            }
+           </script>
         
     </head>
     <body>
@@ -27,6 +48,13 @@
                 </p>
             </div>
         </div>
-        
+        <div>
+               <img id="img" src="">
+               <input type="button" name="" value="">
+               <input type="button" name="" value="">
+               <input type="button" name="" value="">
+               <input type="button" name="" value="">
+        </div>
+
     </body>
 </html>
