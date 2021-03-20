@@ -8,11 +8,11 @@
 
         <script type="text/javascript">
             window.onload = function(){
-              var arrImg = ['Img001.jpeg','Img002.jpeg','Img002.jpeg'],
+              var arrImg1 = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
                   aBtn = document.getElementsByTagName('input'),
                   oImg = document.getElementById('img');
            
-                  oImg.src = arrImg[0]
+                  oImg.src = arrImg1[0]
                   for (var i = 0; i < aBtn.length; i++) {
                    aBtn[i].index = i; 
                       aBtn[i].onclick = function(){
@@ -20,10 +20,11 @@
                        for (var j = 0; j < aBtn.length; j++) {
                            aBtn[j].style.backgroundColor = '#ccc'
                        }
-                       oImg.src = arrImg[this.index];
-                       aBtn[this.index].style.backgroundColor = 'red';
+                       oImg.src = arrImg1[this.index];
+                       aBtn[this.index].style.backgroundColor = 'steelblue';
                       }
                   }
+
             }
            </script>
         
@@ -48,12 +49,17 @@
                 </p>
             </div>
         </div>
-        <div>
-               <img id="img" src="">
-               <input type="button" name="" value="">
-               <input type="button" name="" value="">
-               <input type="button" name="" value="">
-               <input type="button" name="" value="">
+
+        <div id="Portfolio">
+                <div class="ImageFrame">
+                    <img id="img" src="">
+                </div>
+               <br>
+               <div class="Button">
+                <input type="button">
+                <input type="button">
+                <input type="button">
+               </div>
         </div>
 
     </body>
