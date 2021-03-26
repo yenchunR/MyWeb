@@ -5,8 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ruru's Corner</title>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZZPVSMXTJ"></script>
 
         <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3ZZPVSMXTJ'); 
+        
             window.onload = function(){
                 var arrImg = ['Img001.jpeg','Img002.jpeg','Img003.jpeg'],
                     arrHref = ['https://www.youtube.com/watch?v=7q0ws66UTCU',
@@ -47,7 +55,6 @@
                         BtnL[this.index].style.backgroundColor = 'steelblue';
                         }
                     }
-                  
             }
            </script>
         
