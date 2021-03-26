@@ -112,9 +112,19 @@ img{
     text-decoration: none; 
     text-align: center;
 }
-@media (max-width: 660px){
+@media screen and (max-width:660px){
     .Cover{
         height: 700px;
+    }
+    .NavBar{
+        display: block;
+        right: 0;
+        top: 5%;
+        margin-top: -2.5em;
+    }
+    .NavBarText{
+        color:rgb(84, 165, 192);
+        font-size: 13px;
     }
     #NavBarList{
         list-style-type: none;
@@ -124,10 +134,25 @@ img{
     #NavBarList ul li{
         display: inline-block;
         height: 30px;
-        width: 98px;
+        width: 65px;
     }
     .ImageFrame{
         height: 230px;
         text-align: center;
+    }
+    .PartTitle{
+        font-size: 50px;
+        color: steelblue;
+        font-family:cursive;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+    .Intr{
+        font-size: 15px;
+        color: dimgray;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 30px;
     }
 }
